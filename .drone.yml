@@ -22,7 +22,7 @@ steps:
 - name: mod-list
   image: kalka/drone-entrypoint
   commands:
-  - python wolfpackmaker/raw_mod_list.py α
+  - python wolfpackmaker/raw_mod_list.py Alpha
 - name: upload
   image: plugins/gitea-release
   settings:
