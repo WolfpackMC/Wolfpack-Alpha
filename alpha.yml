@@ -47,6 +47,7 @@ mods:
 - endertech:
 - ender-zoo:
 - extracells2:
+    url: 'https://media.forgecdn.net/files/2497/337/ExtraCells-1.7.10-2.3.14b200.jar'
 - extratic:
 - extra-utilities:
 - fastcraft:
