@@ -63,7 +63,6 @@ mods:
 - hats:
 - hat-stand:
 - headcrumbs:
-- hardcore-questing-mode:
 - nuclear-control-2:
 - ichunutil:
 - immersive-engineering:
@@ -96,7 +95,6 @@ mods:
 - openperipheralintegration:
 - pams-harvestcraft:
 - asp-gs-patcher:
-- portal-gun:
 - project-red-base:
 - project-red-compat:
 - project-red-integration:
