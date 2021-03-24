@@ -19,10 +19,10 @@ steps:
   commands:
   - zip -r Wolfpack-Alpha.zip wolfpackmaker/wolfpackmaker.py wolfpackmaker/wolfpackmaker.bat .minecraft instance.cfg mmc-pack.json wolfpackalpha.png
   - zip -r config.zip .minecraft mmc-pack.json
-# - name: mod-list
-#   image: kalka/drone-entrypoint
-#   commands:
-#   - python wolfpackmaker/raw_mod_list.py Alpha
+- name: mod-list
+  image: kalka/drone-entrypoint
+  commands:
+  - python wolfpackmaker/raw_mod_list.py Alpha
 - name: upload
   image: plugins/gitea-release
   settings:
