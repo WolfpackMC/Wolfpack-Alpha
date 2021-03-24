@@ -13,7 +13,7 @@ steps:
 - name: lock
   image: kalka/drone-entrypoint
   commands:
-  - packmaker -vvvv --config wolfpackmaker/packmaker.conf lock
+  - packmaker -vvvv --config wolfpackmaker/packmaker.conf lock alpha.yml
 - name: package
   image: kalka/drone-entrypoint
   commands:
