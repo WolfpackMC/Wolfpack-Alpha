@@ -108,10 +108,12 @@ mods:
 - runic-dungeons:
 - simply-jetpacks:
 - solar-expansion:
+    url: 'https://media.forgecdn.net/files/2236/243/SolarExpansion-Basic-1.6a.jar'
 - springboards:
 - steves-addons:
 - steves-carts-2:
 - steves-factory-manager:
+    url: 'https://media.forgecdn.net/files/2230/424/StevesFactoryManagerA93.jar'
 - steves-workshop:
 - storage-drawers:
 - storage-drawers-biomes-o-plenty-pack:
