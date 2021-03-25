@@ -72,7 +72,9 @@ mods:
 - inventory-tweaks:
 - iron-chests:
 - jabba:
-- journeymap:
+- xaeros-minimap:
+- xaeros-worldmap:
+- gravestone-mod:
 - letsencryptcraft:
 - logistics-pipes:
 - magic-bees:
@@ -129,6 +131,10 @@ mods:
 - thermal-dynamics:
 - thermal-expansion:
 - thermal-foundation:
+- kubejs:
+- mmmmmmmmmmmm:
+- thaumcraft-4-scrolling:
+- foamfix-optimization-mod:
 - tic-tooltips:
 - tinkers-mechworks:
 - translocators:
