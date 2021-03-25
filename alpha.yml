@@ -36,6 +36,7 @@ mods:
 - cofh-core:
 - cofh-lib:
 - computercraft:
+    url: 'https://media.forgecdn.net/files/2269/339/ComputerCraft1.75.jar'
 - crafttweaker:
 - custom-main-menu:
 - decocraft:
