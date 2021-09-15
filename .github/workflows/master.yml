@@ -1,5 +1,5 @@
 
-id: modpack-build-latest
+name: modpack-build-latest
 
 on:
   push:
@@ -13,21 +13,21 @@ jobs:
     container:
       image: kalka/wolfpackmaker:latest
     steps:
-      - id: "Checkout local repository"
-          uses: actions/checkout@v2
-      - id: "Clone wolfpackmaker"
-          run: git clone https://github.com/kalkafox/wolfpackmaker.git
-      - id: "Assemble lockfile"
-      - run: python3 wolfpackmaker/util/lock.py
-      - id: "Package modpack contents"
-          run: zip -r $(echo $GITHUB_REPOSITORY | sed -e 's/\/.*\///g').zip wolfpackmaker/wolfpackmaker.py wolfpackmaker/wolfpackmaker.bat wolfpackmaker/requirements.txt wolfpackmaker/multimc.bat .minecraft instance.cfg mmc-pack.json *.png
-          run: zip -r config.zip .minecraft mmc-pack.json
-      - id: Publish release
-          uses: "marvinpinto/action-automatic-releases@latest"
-          with:
-            repo_token: "${{ secrets.GITHUB_TOKEN }}"
-            automatic_release_tag: "latest"
-            prerelease: true
-            files: |
-              manifest.*
-              *.zip
+      - name: "Checkout local repository"
+        uses: actions/checkout@v2
+      - name: "Clone wolfpackmaker"
+        run: git clone https://github.com/kalkafox/wolfpackmaker.git
+      - name: "Assemble lockfile"
+        run: python3 wolfpackmaker/util/lock.py
+      - name: "Package modpack contents"
+        run: zip -r $(echo $GITHUB_REPOSITORY | sed -e 's/\/.*\///g').zip wolfpackmaker/wolfpackmaker.py wolfpackmaker/wolfpackmaker.bat wolfpackmaker/requirements.txt wolfpackmaker/multimc.bat .minecraft instance.cfg mmc-pack.json *.png
+        run: zip -r config.zip .minecraft mmc-pack.json
+      - name: Publish release
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          files: |
+            manifest.*
+            *.zip
