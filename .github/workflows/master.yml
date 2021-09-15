@@ -1,5 +1,5 @@
 
-name: modpack-build-latest
+id: modpack-build-latest
 
 on:
   push:
@@ -13,16 +13,16 @@ jobs:
     container:
       image: kalka/wolfpackmaker:latest
     steps:
-      - name: "Checkout local repository"
+      - id: "Checkout local repository"
           uses: actions/checkout@v2
-      - name: "Clone wolfpackmaker"
+      - id: "Clone wolfpackmaker"
           run: git clone https://github.com/kalkafox/wolfpackmaker.git
-      - name: "Assemble lockfile"
+      - id: "Assemble lockfile"
       - run: python3 wolfpackmaker/util/lock.py
-      - name: "Package modpack contents"
+      - id: "Package modpack contents"
           run: zip -r $(echo $GITHUB_REPOSITORY | sed -e 's/\/.*\///g').zip wolfpackmaker/wolfpackmaker.py wolfpackmaker/wolfpackmaker.bat wolfpackmaker/requirements.txt wolfpackmaker/multimc.bat .minecraft instance.cfg mmc-pack.json *.png
           run: zip -r config.zip .minecraft mmc-pack.json
-      - name: Publish release
+      - id: Publish release
           uses: "marvinpinto/action-automatic-releases@latest"
           with:
             repo_token: "${{ secrets.GITHUB_TOKEN }}"
