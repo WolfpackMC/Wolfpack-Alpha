@@ -21,6 +21,7 @@ jobs:
         run: python3 wolfpackmaker/util/lock.py
       - name: "Package modpack contents"
         run: zip -r $(echo $GITHUB_REPOSITORY | sed -e 's/\/.*\///g').zip wolfpackmaker/wolfpackmaker.py wolfpackmaker/wolfpackmaker.bat wolfpackmaker/requirements.txt wolfpackmaker/multimc.bat .minecraft instance.cfg mmc-pack.json *.png
+      - name: "Package config"
         run: zip -r config.zip .minecraft mmc-pack.json
       - name: Publish release
         uses: "marvinpinto/action-automatic-releases@latest"
