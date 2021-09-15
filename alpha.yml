@@ -1,10 +1,7 @@
-authors:
-- Kalka
-files:
-- location: overrides
-forge: 10.13.4.1614
-minecraft: 1.7.10
+modloader: Forge
+version: 1.7.10
 mods:
+- advancedsolarpanels:
 - baubles:
 - forge-multi-part:
 - forge-relocation:
@@ -35,7 +32,7 @@ mods:
 - cofh-core:
 - cofh-lib:
 - computercraft:
-    url: 'https://media.forgecdn.net/files/2269/339/ComputerCraft1.75.jar'
+    id: 67504
 - crafttweaker:
 - custom-main-menu:
 - decocraft:
@@ -46,18 +43,24 @@ mods:
 - ender-storage:
 - endertech:
 - ender-zoo:
-- extracells2:
-    url: 'https://media.forgecdn.net/files/2497/337/ExtraCells-1.7.10-2.3.14b200.jar'
+- extra-cells-2-samlam140330s-fork:
 - extratic:
 - extra-utilities:
+- extraplanets:
 - fastcraft:
 - fast-leaf-decay:
 - forbidden-magic:
 - forestry:
-- ftb-library:
+- ftb-library-legacy-forge:
 - ftb-tweaks:
-- ftb-utilities:
+- ftb-utilities-forge:
 - funky-locomotion:
+- galacticraft-core:
+    url: https://micdoodle8.com/new-builds/GC-1.7/504/GalacticraftCore-1.7-3.0.12.504.jar
+-  galacticraft-planets:
+    url: https://micdoodle8.com/new-builds/GC-1.7/504/Galacticraft-Planets-1.7-3.0.12.504.jar
+- micdoodlecore:
+    url: https://micdoodle8.com/new-builds/GC-1.7/504/MicdoodleCore-1.7-3.0.12.504.jar
 - gendustry:
 - guide-api:
 - hats:
@@ -97,12 +100,12 @@ mods:
 - openperipheralintegration:
 - pams-harvestcraft:
 - asp-gs-patcher:
-- project-red-base:
+- project-red-core:
 - project-red-compat:
 - project-red-integration:
-- project-red-lighting:
-- project-red-mechanical:
-- project-red-world:
+- project-red-illumination:
+- project-red-expansion:
+- project-red-exploration:
 - railcraft:
 - redstone-arsenal:
 - resource-loader:
@@ -110,12 +113,12 @@ mods:
 - runic-dungeons:
 - simply-jetpacks:
 - solar-expansion:
-    url: 'https://media.forgecdn.net/files/2236/243/SolarExpansion-Basic-1.6a.jar'
+      id: 223583
 - springboards:
 - steves-addons:
 - steves-carts-2:
 - steves-factory-manager:
-    url: 'https://media.forgecdn.net/files/2230/424/StevesFactoryManagerA93.jar'
+      id: 228626
 - steves-workshop:
 - storage-drawers:
 - storage-drawers-biomes-o-plenty-pack:
@@ -128,11 +131,12 @@ mods:
 - thaumcraft-nei-plugin:
 - thaumic-energistics:
 - thaumic-exploration:
+- thaumic-tinkerer:
 - thermal-dynamics:
 - thermal-expansion:
 - thermal-foundation:
 - mmmmmmmmmmmm:
-- thaumcraft-4-scrolling:
+- tc4tweaks:
 - foamfix-optimization-mod:
 - tic-tooltips:
 - tinkers-mechworks:
@@ -143,7 +147,3 @@ mods:
 - wawla:
 - witchery:
 - wr-cbe-universal:
-name: Wolfpack-Alpha
-resourcepacks: []
-title: Wolfpack-Alpha
-version: 1.0.0
