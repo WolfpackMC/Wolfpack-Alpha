@@ -27,9 +27,6 @@ jobs:
             manifest.*
             *.zip
 
-
-name: modpack-build-tag
-
 on:
   push:
     tags:
