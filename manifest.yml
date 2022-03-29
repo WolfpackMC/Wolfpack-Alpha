@@ -25,7 +25,13 @@ mods:
 - blood-magic:
 - botania:
 - brandons-core:
-- buildcraft:
+- buildcraft-factory:
+- buildcraft-core:
+- buildcraft-silicon:
+- buildcraft-builders:
+- buildcraft-robotics:
+- buildcraft-transport:
+- buildcraft-energy:
 - buildcraft-compat:
 - carpenters-blocks:
 - chisel:
